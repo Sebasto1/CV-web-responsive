@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sofia Sans', serif;
+    background-color: black;
+    color: aliceblue;
+    display: block;
+}
+
+nav.menu{
+    top: 0;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    background-color: rgb(24, 23, 23);
+    overflow: hidden;
+}
+
+nav ul {
+    clear: left;
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative ;
+    right: 50%;
+    text-align: center;
+}
+
+nav li {
+    display: block;
+    float: left;
+    left: 50%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+li a:hover {
+    background-color: green;
+}
+
+.column{
+    float: left;
+    padding: 10px;
+}
+
+.column.side{
+    width: 10%;
+    height: 100%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column.middle{
+    width: 80%;
+}
+
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle{
+        width: 100%;
+    }
+}
+
+.text {
+    float: right;
+}
+
+.btn {
+    cursor: pointer;
+    border: 1px;
+    background-color: white;
+    height: 250px;
+    width: 50%;
+    color: blue;
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+.box-1{
+    border: 1px;
+    background-color: black;
+    height: 250px;
+    width: 50%;
+    padding: 10px;
+    float: left;
+    text-align: center;
+    
+}
+
+.box-2{
+    border: 1px;
+    background-color: black;
+    height: 250px;
+    width: 50%;
+    padding: 10px;
+    float: right;
+    
+}
+
+img.principal{
+    height: 240px;
+    width: 100%;
+    padding: 10px;
+    border: 1px;
+    
+}
+
+.principal.responsive{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(24, 23, 23);
+    margin: 5px;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    bottom: 0;
+    position: static;
+  }
